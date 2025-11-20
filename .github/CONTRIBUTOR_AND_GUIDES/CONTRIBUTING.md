@@ -87,7 +87,7 @@ git switch -c your-feature-branch
 
 ### 4. Change paths in build.func install.func and AppName.sh
 To be able to develop from your own branch you need to change:\
-`https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main`\
+`https://raw.githubusercontent.com/matz3/ProxmoxVE/refs/heads/otterwiki`\
 to\
 `https://raw.githubusercontent.com/[USER]/[REPOSITORY]/refs/heads/[BRANCH]`\
  in following files:
@@ -98,11 +98,6 @@ to\
 
 Example: `https://raw.githubusercontent.com/tremor021/PromoxVE/refs/heads/testbranch`
 
-Also you need to change:\
-`https://raw.githubusercontent.com/community-scripts/ProxmoxVE/raw/main`\
-to\
-`https://raw.githubusercontent.com/[USER]/[REPOSITORY]/raw/[BRANCH]`\
-in `misc/install.func` in order for `update` shell command to work.\
 These changes are only while writing and testing your scripts. Before opening a Pull Request, you should change all above mentioned paths in `misc/build.func`, `misc/install.func` and `ct/AppName.sh` to point to the original paths.
 
 ### 4. Commit changes (without build.func and install.func!)
